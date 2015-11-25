@@ -138,11 +138,23 @@ jar, tar, zip, dump, 7z, arj.
     </contributor>
   </contributors>
 
-  <scm>
-    <connection>scm:svn:http://svn.apache.org/repos/asf/commons/proper/compress/trunk</connection>
-    <developerConnection>scm:svn:https://svn.apache.org/repos/asf/commons/proper/compress/trunk</developerConnection>
-    <url>http://svn.apache.org/repos/asf/commons/proper/compress/trunk</url>
-  </scm>
+    <scm>
+      <developerConnection>scm:git:git@gitlab.redborder.lan:bigdata/rb-apache-commons.git</developerConnection>
+      <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+      <repository>
+        <id>internal</id>
+        <name>readBorder Internal Repository</name>
+        <url>http://archiva.redborder.lan/repository/internal/</url>
+      </repository>
+      <snapshotRepository>
+        <id>snapshots</id>
+        <name>redBorder Snapshot Repository</name>
+        <url>http://archiva.redborder.lan/repository/snapshots/</url>
+      </snapshotRepository>
+    </distributionManagement>
 
   <build>
     <pluginManagement>
